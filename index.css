@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #242424;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  display: inline;
+  padding: 10px 70px;
+  font-weight: bold;
+}
+
+.time-table {
+  border-spacing: 10px;
+  cursor: pointer;
+}
+
+.time-table .label {
+  background-color: #1b1b1b;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.time-table .period-number {
+  color: white;
+  font-size: 25px;
+}
+
+.time-table .period-time {
+  color: white;
+  margin: 9px;
+}
+
+.time-table .period-data {
+  border-radius: 5px;
+  background-color: wheat;
+  margin: 10px;
+  font-family: 'Poppins', sans-serif;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+
+.time-table td {
+  margin: 20px;
+  padding: 2vh;
+  font-size: 20px;
+  text-align: center;
+}
+
+.time-table .dow {
+  font-family: 'Roboto', sans-serif;
+  color: wheat;
+  font-size: 25px;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+}
+
+.time-table .period-data:hover {
+  background-color: white;
+}
+
+.time-table-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=index.css.map */
