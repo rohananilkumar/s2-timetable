@@ -1,6 +1,15 @@
 currentDate = new Date();
 
-
+periodData = {
+    profComm:{name:'Prof Comm', link:'https://meet.google.com/ych-zbio-fpr'},
+    EGS:{name:'EGS', link:'https://meet.google.com/ych-zbio-fpr'},
+    cPrg:{name:'C-Prg', link:'https://meet.google.com/ych-zbio-fpr'},
+    maths:{name:'Maths', link:'https://meet.google.com/ych-zbio-fpr'},
+    phyPgl:{name:'PHY/PGL', link:'https://meet.google.com/ych-zbio-fpr'},
+    BEEE_E:{name:'BEEE(E)', link:'https://meet.google.com/ych-zbio-fpr'},
+    BEEE_T:{name:'BEEE(T)', link:'https://meet.google.com/ych-zbio-fpr'},
+    ee_ec_ws:{name:'EE/EC W/S', link:'https://meet.google.com/pwf-xhhw-zqt'},
+}
 
 periodTimings = {
     1:[[8,30],[9,10]],
@@ -72,5 +81,16 @@ document.querySelector('#answer-no').addEventListener('mouseover',function(){
 
 document.querySelector('#answer-yes').addEventListener('click',()=>{
     alert('He kind of already knew that but thanks for confirming :)');
+})
+
+document.querySelectorAll('.period-data').forEach((element,ind)=>{
+    element.addEventListener('click',()=>{
+        for (let periodInfo in periodData){
+            console.log(element.innerHTML+periodData[periodInfo].name)
+            if(periodData[periodInfo].name === element.innerHTML)
+            window.open(periodData[periodInfo].link);
+        }
+    })
+    
 })
 
