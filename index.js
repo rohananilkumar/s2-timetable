@@ -47,5 +47,27 @@ function periodSelector(row, column){
     return periods;
 }
 
-const currentCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
-currentCell.style.backgroundColor='#a9ffa6';
+setTimeout(function(){
+    document.querySelector('.period-data').style.ba
+    const currentCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
+    currentCell.style.backgroundColor='#a9ffa6';
+}, 1000);
+
+
+
+
+document.querySelector('#answer-no').addEventListener('mouseover',function(){
+    if(document.querySelector('.answers').style.flexDirection=='row-reverse'){
+        document.querySelector('.answers').style.flexDirection='row';
+    }
+    else{
+        document.querySelector('.answers').style.flexDirection='row-reverse';
+
+    }
+    console.log('mouse over');
+});
+
+document.querySelector('#answer-yes').addEventListener('click',()=>{
+    alert('He kind of already knew that but thanks for confirming :)');
+})
+

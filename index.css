@@ -13,15 +13,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -96,6 +97,79 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   overflow-x: auto;
+}
+
+.time-table-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.time-table-controls #launch-class {
+  background-color: #1b1b1b;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.time-table-controls #launch-class:hover {
+  background-color: white;
+  color: #1b1b1b;
+}
+
+.rohan-fun {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1b1b1b;
+  padding: 20px;
+}
+
+.rohan-fun #question {
+  color: wheat;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rohan-fun .answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.rohan-fun .answers .answer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  background-color: #242424;
+  padding: 5px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rohan-fun .answers .answer:hover {
+  background-color: wheat;
+  color: black;
 }
 
 @media (max-width: 945px) {
