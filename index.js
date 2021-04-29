@@ -95,3 +95,12 @@ document.querySelectorAll('.period-data').forEach((element,ind)=>{
     
 })
 
+document.querySelector('#launch-class').addEventListener('click',()=>{
+    const currentPeriodCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
+    for (let periodInfo in periodData){
+        console.log(currentPeriodCell.innerHTML+periodData[periodInfo].name)
+        if(periodData[periodInfo].name === currentPeriodCell.innerHTML)
+        window.open(periodData[periodInfo].link);
+    }
+})
+
