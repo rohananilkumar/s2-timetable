@@ -58,7 +58,6 @@ function periodSelector(row, column){
 }
 
 setTimeout(function(){
-    document.querySelector('.period-data').style.backgroundColor = 'wheat';
     const currentCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
     currentCell.style.backgroundColor='#a9ffa6';
     console.log(new Date);
