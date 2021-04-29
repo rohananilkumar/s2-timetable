@@ -68,15 +68,7 @@ document.querySelector('#answer-no').addEventListener('mouseover',function(){
 
     }
 });
-document.querySelector('#answer-no').addEventListener('click',function(){
-    if(document.querySelector('.answers').style.flexDirection=='row-reverse'){
-        document.querySelector('.answers').style.flexDirection='row';
-    }
-    else{
-        document.querySelector('.answers').style.flexDirection='row-reverse';
 
-    }
-});
 
 document.querySelector('#answer-yes').addEventListener('click',()=>{
     alert('He kind of already knew that but thanks for confirming :)');
