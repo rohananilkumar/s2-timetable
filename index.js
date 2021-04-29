@@ -57,13 +57,14 @@ function periodSelector(row, column){
     return periods;
 }
 
-setTimeout(function(){
-    const currentCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
-    currentCell.style.backgroundColor='#a9ffa6';
-    console.log(new Date);
-}, 1000);
+setInterval(function(){
+    try{
+        const currentCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
 
-setTimeout(function(){console.log('lol')},100)
+        currentCell.style.backgroundColor='#a9ffa6';
+    }
+    catch{}
+}, 1000);
 
 
 
