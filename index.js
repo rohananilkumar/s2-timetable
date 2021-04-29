@@ -48,10 +48,13 @@ function periodSelector(row, column){
 }
 
 setTimeout(function(){
-    document.querySelector('.period-data').style.ba
+    document.querySelector('.period-data').style.backgroundColor = 'wheat';
     const currentCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
     currentCell.style.backgroundColor='#a9ffa6';
+    console.log(new Date);
 }, 1000);
+
+setTimeout(function(){console.log('lol')},100)
 
 
 
@@ -64,7 +67,6 @@ document.querySelector('#answer-no').addEventListener('mouseover',function(){
         document.querySelector('.answers').style.flexDirection='row-reverse';
 
     }
-    console.log('mouse over');
 });
 
 document.querySelector('#answer-yes').addEventListener('click',()=>{
