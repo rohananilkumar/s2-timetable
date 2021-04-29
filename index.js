@@ -8,7 +8,7 @@ periodData = {
     phyPgl:{name:'PHY/PGL', link:'https://meet.google.com/ych-zbio-fpr'},
     BEEE_E:{name:'BEEE(E)', link:'https://meet.google.com/ych-zbio-fpr'},
     BEEE_T:{name:'BEEE(T)', link:'https://meet.google.com/ych-zbio-fpr'},
-    phy:{name:'PHY', link:'https://meet.google.com/ych-zbio-fpr'},
+    phy:{name:'Phy', link:'https://meet.google.com/ych-zbio-fpr'},
     ee_ec_ws:{name:'EE/EC W/S', link:'https://meet.google.com/pwf-xhhw-zqt'},
 }
 
