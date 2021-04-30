@@ -46,7 +46,7 @@ function periodSelector(row, column){
     periods=[];
     
     for(let i=0; col=_row.cells[i]; i++){
-        if(col.colSpan==2){
+        if(col.style.gridColumn=='span 2'){
             periods.push(col);
             periods.push(col);
         }
@@ -57,8 +57,28 @@ function periodSelector(row, column){
     return periods;
 }
 
+function getRows(){
+    const table = document.querySelector('.time-table');
+    const cells = table.children;
+
+    let rows = []
+    let row = []
+
+    Array(cells).forEach((cell)=>{
+        console.log(cell);
+        row.push(cell);
+        if(cell?.classList?.contains('dow')){
+            rows.push(row);
+            row = [];
+        }
+    })
+
+    return rows;
+}
+
 setInterval(function(){
     try{
+        currentDate = new Date();
         const currentCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
 
         currentCell.style.backgroundColor='#a9ffa6';

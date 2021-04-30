@@ -41,12 +41,16 @@ body {
 
 .time-table {
   border-spacing: 10px;
+  width: 80%;
   cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto auto;
 }
 
 .time-table .label {
   background-color: #1b1b1b;
-  padding: 5px;
   border-radius: 10px;
   font-family: 'Roboto', sans-serif;
 }
@@ -64,16 +68,15 @@ body {
 .time-table .period-data {
   border-radius: 5px;
   background-color: wheat;
-  margin: 10px;
   font-family: 'Poppins', sans-serif;
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
+  font-size: 20px;
 }
 
-.time-table td {
-  margin: 20px;
+.time-table .cell {
+  margin: 5px;
   padding: 2vh;
-  font-size: 20px;
   text-align: center;
 }
 
@@ -83,6 +86,7 @@ body {
   font-size: 25px;
   background-color: #1b1b1b;
   border-radius: 10px;
+  text-align: center;
 }
 
 .time-table .period-data:hover {
@@ -170,11 +174,5 @@ body {
 .rohan-fun .answers .answer:hover {
   background-color: wheat;
   color: black;
-}
-
-@media (max-width: 945px) {
-  body {
-    visibility: hidden;
-  }
 }
 /*# sourceMappingURL=index.css.map */
