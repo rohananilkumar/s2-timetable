@@ -59,6 +59,8 @@ function periodSelector(row, column){
 
 setInterval(function(){
     try{
+        currentDate = new Date();
+
         const currentCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
 
         currentCell.style.backgroundColor='#a9ffa6';
