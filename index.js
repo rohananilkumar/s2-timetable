@@ -85,7 +85,7 @@ document.querySelector('#answer-no').addEventListener('mouseover',function(){
 document.querySelector('#answer-yes').addEventListener('click',()=>{
     alert('He kind of already knew that but thanks for confirming :)');
 })
-
+*/
 document.querySelectorAll('.period-data').forEach((element,ind)=>{
     element.addEventListener('click',()=>{
         for (let periodInfo in periodData){
@@ -96,7 +96,7 @@ document.querySelectorAll('.period-data').forEach((element,ind)=>{
     })
     
 })
-*/
+
 
 document.querySelector('#launch-class').addEventListener('click',()=>{
     const currentPeriodCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
