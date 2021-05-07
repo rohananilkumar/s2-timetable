@@ -69,7 +69,7 @@ setInterval(function(){
 }, 1000);
 
 
-
+/*
 
 document.querySelector('#answer-no').addEventListener('mouseover',function(){
     if(document.querySelector('.answers').style.flexDirection=='row-reverse'){
@@ -96,6 +96,7 @@ document.querySelectorAll('.period-data').forEach((element,ind)=>{
     })
     
 })
+*/
 
 document.querySelector('#launch-class').addEventListener('click',()=>{
     const currentPeriodCell = periodSelector(currentDate.getDay())[getPeriodNumber()];
